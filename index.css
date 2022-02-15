@@ -6,9 +6,13 @@ li {
   color: inherit;
 }
 
+body {
+  padding: 0;
+  margin: 0;
+}
 /* Toolbar section  */
 
-.nav-bar {
+.header {
   background: #3c3a39;
   display: flex;
   justify-content: space-between;
@@ -37,7 +41,7 @@ li {
   background-image: url(./images/illustration-header-mobile.png);
   background-repeat: no-repeat;
   background-attachment: scroll;
-  background-position: 250px 204px;
+  background-position: 264px 204px;
   background-color: #1c1a19;
   display: flex;
   flex-direction: column;
