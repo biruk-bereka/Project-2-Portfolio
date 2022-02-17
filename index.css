@@ -107,7 +107,19 @@ body {
   padding-right: 24px;
 }
 
+.feature-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.button.btn {
+  margin-left: 18px;
+  align-self: flex-start;
+}
+
 .page-title {
+  margin-left: 18px;
   padding-bottom: 24px;
   margin-bottom: 80px;
   border-bottom: 1px solid #212121;
@@ -126,6 +138,7 @@ body {
 }
 
 .project-title {
+  margin-top: 24px;
   font-family: "Crete Round", Arial, Helvetica, sans-serif;
   font-style: normal;
   font-weight: normal;
@@ -137,6 +150,8 @@ body {
 }
 
 .project-discription {
+  margin-top: 0;
+  margin-bottom: 0;
   font-family: "Inter", Arial, Helvetica, sans-serif;
   font-style: normal;
   font-weight: normal;
@@ -148,6 +163,7 @@ body {
 }
 
 .technologies li {
+  margin-left: 5px;
   font-family: "Inter", Arial, Helvetica, sans-serif;
   font-style: normal;
   font-weight: 500;
@@ -257,4 +273,122 @@ button:disabled {
 
 button:enabled {
   background: #ff6b00;
+}
+
+/* About me section */
+
+.about-me {
+  height: auto;
+  background-image: url(./images/illustration-about-me-mobile.png);
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-position: 251px 362px;
+  background-color: #1c1a19;
+  display: flex;
+  flex-direction: column;
+  padding: 0 24px;
+  margin-top: 120px;
+}
+
+.about-me .page-title {
+  margin-top: 120px;
+  margin-bottom: 0;
+  width: 327px;
+  height: 79px;
+  font-family: "Crete Round", Arial, Helvetica, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 72px;
+  line-height: 88px;
+  letter-spacing: 0.37px;
+  color: #ff6b00;
+}
+
+.about-me .description {
+  margin-left: 15px;
+  margin-top: 0;
+  width: 327px;
+  height: 148px;
+  font-family: "Inter", Arial, Helvetica, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+  color: #f4f5f7;
+}
+
+.about-me .button-1 {
+  margin-left: 15px;
+  width: fit-content;
+  padding: 12px;
+  font-family: "Inter", Arial, Helvetica, sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 17px;
+  line-height: 24px;
+  border: 1px solid;
+  background: #ff6b00;
+  color: #fff;
+}
+
+.underline {
+  margin-top: 209px;
+  border: 1px solid #fff;
+}
+
+.profession .profession-lists li {
+  margin: 15px;
+  font-family: "Inter", Arial, Helvetica, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 22px;
+  line-height: 43px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: #fff;
+}
+
+.profession {
+  margin-top: 137px;
+}
+
+.profession ul {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.label {
+  font-family: "InaiMathi", Arial, Helvetica, sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 32px;
+  line-height: 44px;
+  color: #fff;
+}
+
+.profession .skills {
+  margin-bottom: 132px;
+}
+
+.bullet {
+  width: 18px;
+  height: 18px;
+  background: #ff6b00;
+}
+
+.bullet.diamond {
+  transform: rotate(-45deg);
+}
+
+.bullet.circle {
+  border-radius: 50%;
+}
+
+.label-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
 }
