@@ -257,23 +257,28 @@ body {
   letter-spacing: 1.5px;
 }
 
+button:enabled {
+  color: #fff;
+  background: #f55800;
+}
+
 button:hover {
-  background-color: rgb(236, 213, 171);
-  color: orange;
-  border: 2px solid orange;
+  color: #f55800;
+  background: #fff5e1;
+  border: 1px solid #f55800;
 }
 
 button:visited {
-  background-color: red;
+  color: #f4f1f0;
+  background: #e05304;
 }
 
 button:disabled {
-  color: #f4f5f7;
+  background: #f4f1f0;
+  color: #5b5957;
 }
 
-button:enabled {
-  background: #ff6b00;
-}
+
 
 /* About me section */
 
