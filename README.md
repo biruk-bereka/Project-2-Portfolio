@@ -14,7 +14,7 @@
 👤 **Author1**
 
 - GitHub: [@biruk-bereka](https://github.com/biruk-bereka)
-- LinkedIn: [LinkedIn]https://www.linkedin.com/in/biruk-bereka1212/)
+- LinkedIn:[@Biruk Bereka](https://www.linkedin.com/in/biruk-bereka1212/)
 
 
 ## 🤝 Contributing
