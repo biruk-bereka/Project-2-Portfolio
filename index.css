@@ -416,13 +416,18 @@ textarea {
   font-family: "Inter", Arial, Helvetica, sans-serif;
   font-style: normal;
   font-weight: normal;
-  width: 356px;
+  width: 300px;
   border: none;
   padding-left: 5px;
   margin-top: 25px;
   font-size: 15px;
   line-height: 24px;
   color: #979493;
+}
+
+input {
+  padding-bottom: 14px;
+  border-bottom: 1px solid #DBD8D7;;
 }
 
 input {
