@@ -2,7 +2,7 @@
 
 # Project Name
 
-> Portfolio: setup and mobile version skeleton
+> Portfolio: Mobile and Desktop version
 
 
 ## Built With
