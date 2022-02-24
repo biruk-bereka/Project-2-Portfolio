@@ -6,6 +6,12 @@ li {
   color: inherit;
 }
 
+a {
+  list-style: none;
+  text-decoration: none;
+  color: inherit;
+}
+
 body {
   padding: 0;
   margin: 0;
@@ -469,4 +475,41 @@ textarea {
   background: #0d151e;
   border-radius: 10px;
   margin-bottom: 20px;
+}
+
+/* Desktop version */
+
+.nav-items {
+  display: none;
+}
+
+@media screen and (min-width: 992px) {
+  /* Nav-bar */
+  .menu-icon {
+    display: none;
+  }
+
+  .nav-items ul li {
+    margin-right: 32px;
+  }
+
+  .name {
+    margin-top: 0;
+    margin-left: 50px;
+  }
+
+  .nav-items {
+    margin-right: 70px;
+    display: flex;
+    font-family: "Inter", Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 20px;
+    color: #fff;
+  }
+
+  .nav-items ul {
+    display: flex;
+  }
 }
