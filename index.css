@@ -491,12 +491,24 @@ textarea {
   display: none;
 }
 
+.project-card .desktop-title {
+  display: none;
+}
+
 @media screen and (min-width: 992px) {
+  * {
+    margin: 0;
+    padding: 0;
+  }
 
   /* Nav-bar */
-  
+
   .menu-icon {
     display: none;
+  }
+
+  .social li {
+    margin-bottom: 15px;
   }
 
   .nav-items ul li {
@@ -525,7 +537,6 @@ textarea {
 
   /* Welcome section */
 
-  
   .welcome-section {
     height: 100vh;
     background-image: url(./images/Illustration-header-desktop-2.png);
@@ -537,14 +548,14 @@ textarea {
     flex-direction: row;
     padding: 109px 24px;
   }
-  
+
   .contents {
     display: flex;
     flex-direction: column;
     width: 438px;
     justify-content: center;
   }
-  
+
   .social-links {
     display: flex;
     order: -1;
@@ -557,15 +568,11 @@ textarea {
     margin-right: 50px;
   }
 
-  .social li {
-    margin-bottom: 15px;
-  }
-
   /* Work section */
-   
+
   .second-section {
     margin-left: 50px;
-    margin-right: 50px;
+    margin-right: 30px;
   }
 
   .page-title {
@@ -573,7 +580,7 @@ textarea {
     justify-items: baseline;
     border-bottom: none;
   }
-  
+
   .page-title .section-title {
     margin-right: 14px;
   }
@@ -581,16 +588,17 @@ textarea {
   .border-right {
     display: block;
     width: 794px;
-    height: 0px;
+    height: 0;
     margin-top: 26px;
     border-bottom: 1px solid #212121;
   }
-  
+
   .content-image-mobile {
-       display: none;
+    display: none;
   }
 
   .feature-wrapper {
+    margin-bottom: 20px;
     display: grid;
     grid-template-columns: 1fr 1fr;
     justify-content: center;
@@ -601,8 +609,172 @@ textarea {
     margin-right: 20px;
   }
 
-  .project-title {
-    margin-top: -3px;
+  .title.project-title {
+    width: auto;
+    margin-top: 0;
+    margin-bottom: 24px;
   }
 
+  .discription-1.project-discription {
+    width: 358px;
+  }
+
+  .tech.technologies {
+    margin-bottom: 15px;
+    margin-top: -8px;
+  }
+
+  /* Project section */
+
+  .project-cards-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-column-gap: 24px;
+    grid-row-gap: 7px;
+    justify-content: center;
+  }
+
+  .project-card {
+    margin-top: 0;
+  }
+
+  .project-cards-container .desktop-title {
+    font-family: "Crete Round", Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 32px;
+    line-height: 44px;
+    color: #fff;
+  }
+
+  .card-2 .project-title,
+  .card-2 .button,
+  .card-4 .button {
+    display: none;
+  }
+
+  .card-2 .project-discription,
+  .card-3 .project-discription,
+  .card-4 .project-discription {
+    width: auto;
+  }
+
+  .card-2 .technologies,
+  .card-3 .technologies,
+  .card-4 .technologies {
+    margin-top: -8px;
+    padding-bottom: 11px;
+  }
+
+  .card-3 .project-title,
+  .card-3 .button {
+    display: none;
+  }
+
+  .card-4 .project-title {
+    display: none;
+  }
+
+  .project-card.card-1 .project-title,
+  .project-card.card-1 .project-discription,
+  .project-card.card-1 .technologies {
+    display: none;
+  }
+
+  .card-1 {
+    background-image: url("./images/card-1.png");
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+  }
+
+  .card-2 {
+    margin-top: 22px;
+    background-image: url("./images/card-2.png");
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+  }
+
+  .card-2 .project-title-desktop-1 {
+    margin-top: 90px;
+    display: flex;
+    padding-left: 16px;
+  }
+
+  .card-3 {
+    margin-top: 22px;
+    background-image: url("./images/card-3.png");
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+  }
+
+  .card-3 .project-title-desktop-2 {
+    margin-top: 90px;
+    display: flex;
+    padding-left: 16px;
+  }
+
+  .card-4 {
+    margin-top: 0;
+    background-image: url("./images/card-4.png");
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+  }
+
+  .card-2,
+  .card-3 {
+    margin-top: 0;
+  }
+
+
+
+
+
+
+
+
+
+  /*
+  .project-card.card-2 .project-title {
+    display: none;
+  }
+
+  .project-card.card-2 .button {
+    display: none;
+  }
+
+  .project-card.card-2 {
+    background-image: url("./images/card-2.png");
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+  }
+
+  .project-card.card-2 .project-title-desktop-1 {
+    padding-top: 113px;
+    display: flex;
+    padding-left: 16px;
+  }
+
+  .project-card.card-2 .project-discription {
+    margin-top: 25px;
+    margin-bottom: 0;
+    width: auto;
+  }
+
+  .project-card.card-2 .technologies {
+    margin-top: 5px;
+    margin-bottom: 11px;
+  }
+
+  .project-card.card-3 {
+    background-image: url("./images/card-3.png");
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+  } */
 }
