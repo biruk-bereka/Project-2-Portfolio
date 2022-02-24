@@ -495,6 +495,10 @@ textarea {
   display: none;
 }
 
+.content-desktop {
+  display: none;
+}
+
 @media screen and (min-width: 992px) {
   * {
     margin: 0;
@@ -518,6 +522,11 @@ textarea {
   .name {
     margin-top: 0;
     margin-left: 50px;
+  }
+
+  .nav-bar {
+    margin-bottom: 20px;
+    margin-top: 20px;
   }
 
   .nav-items {
@@ -771,13 +780,57 @@ textarea {
 
   /* Contact section */
 
-  .contact {
+  .content-mobile {
+    display: none;
+  }
+
+  .contact-1 {
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+  }
+
+  .contact .content {
+    text-align: left;
+    margin-right: 90px;
+  }
+
+  .content-desktop {
+    display: flex;
+  }
+
+  .content-1 {
+    display: flex;
+  }
+
+  form {
+    align-items: flex-start;
+  }
+
+  input,
+  textarea {
+    width: 500px;
+  }
+
+  textarea {
+    height: 60px;
+  }
+
+  .contact .social {
+    margin-bottom: -9px;
+  }
+
+  .contact ul {
     display: flex;
     flex-direction: row;
   }
 
-  .contact .content {
+  .underline-end {
+    display: none;
+  }
+
+  .contact .button {
     display: flex;
-    align-items: flex-start;
+    justify-self: flex-start;
   }
 }
