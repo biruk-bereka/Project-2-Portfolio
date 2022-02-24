@@ -730,51 +730,54 @@ textarea {
     margin-top: 0;
   }
 
+  /* About section */
 
-
-
-
-
-
-
-
-  /*
-  .project-card.card-2 .project-title {
-    display: none;
-  }
-
-  .project-card.card-2 .button {
-    display: none;
-  }
-
-  .project-card.card-2 {
-    background-image: url("./images/card-2.png");
+  .about-me {
+    height: auto;
+    background-image: url(./images/about-background-image.png);
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-position: 680px 80px;
+    background-color: #1c1a19;
     display: flex;
     flex-direction: column;
-    justify-content: flex-end;
+    padding: 0 24px;
+    margin-top: 120px;
   }
 
-  .project-card.card-2 .project-title-desktop-1 {
-    padding-top: 113px;
-    display: flex;
-    padding-left: 16px;
+  .about-me .page-title {
+    margin-left: 15px;
   }
 
-  .project-card.card-2 .project-discription {
-    margin-top: 25px;
-    margin-bottom: 0;
+  .about-me .description {
     width: auto;
   }
 
-  .project-card.card-2 .technologies {
-    margin-top: 5px;
-    margin-bottom: 11px;
+  .about-me .button-1 {
+    margin-top: -20px;
   }
 
-  .project-card.card-3 {
-    background-image: url("./images/card-3.png");
+  .profession {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-start;
+  }
+
+  .profession ul {
     display: flex;
     flex-direction: column;
-    justify-content: flex-end;
-  } */
+    align-items: flex-start;
+  }
+
+  /* Contact section */
+
+  .contact {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .contact .content {
+    display: flex;
+    align-items: flex-start;
+  }
 }
