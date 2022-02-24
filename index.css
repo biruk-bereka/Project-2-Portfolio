@@ -778,6 +778,29 @@ textarea {
     align-items: flex-start;
   }
 
+
+  .button-1:enabled {
+    color: #fff;
+    background: #f55800;
+  }
+
+  .button-1:hover {
+    color: #f55800;
+    background: #fff5e1;
+    border: 1px solid #f55800;
+  }
+
+  .button-1:visited {
+    color: #f4f1f0;
+    background: #e05304;
+  }
+
+  .button-1:disabled {
+    background: #f4f1f0;
+    color: #5b5957;
+  }
+
+
   /* Contact section */
 
   .content-mobile {
