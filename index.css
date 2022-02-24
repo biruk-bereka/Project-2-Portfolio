@@ -484,7 +484,9 @@ textarea {
 }
 
 @media screen and (min-width: 992px) {
+
   /* Nav-bar */
+  
   .menu-icon {
     display: none;
   }
@@ -511,5 +513,43 @@ textarea {
 
   .nav-items ul {
     display: flex;
+  }
+
+  /* Welcome section */
+
+  
+  .welcome-section {
+    height: 100vh;
+    background-image: url(./images/Illustration-header-desktop-2.png);
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-position: 604px -70px;
+    background-color: #1c1a19;
+    display: flex;
+    flex-direction: row;
+    padding: 109px 24px;
+  }
+  
+  .contents {
+    display: flex;
+    flex-direction: column;
+    width: 438px;
+    justify-content: center;
+  }
+  
+  .social-links {
+    display: flex;
+    order: -1;
+  }
+
+  .social {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-right: 50px;
+  }
+
+  .social li {
+    margin-bottom: 15px;
   }
 }
