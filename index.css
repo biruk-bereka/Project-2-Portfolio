@@ -483,6 +483,14 @@ textarea {
   display: none;
 }
 
+.border-right {
+  display: none;
+}
+
+.content-image-desktop {
+  display: none;
+}
+
 @media screen and (min-width: 992px) {
 
   /* Nav-bar */
@@ -552,4 +560,49 @@ textarea {
   .social li {
     margin-bottom: 15px;
   }
+
+  /* Work section */
+   
+  .second-section {
+    margin-left: 50px;
+    margin-right: 50px;
+  }
+
+  .page-title {
+    display: flex;
+    justify-items: baseline;
+    border-bottom: none;
+  }
+  
+  .page-title .section-title {
+    margin-right: 14px;
+  }
+
+  .border-right {
+    display: block;
+    width: 794px;
+    height: 0px;
+    margin-top: 26px;
+    border-bottom: 1px solid #212121;
+  }
+  
+  .content-image-mobile {
+       display: none;
+  }
+
+  .feature-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+  }
+
+  .content-image-desktop {
+    display: block;
+    margin-right: 20px;
+  }
+
+  .project-title {
+    margin-top: -3px;
+  }
+
 }
