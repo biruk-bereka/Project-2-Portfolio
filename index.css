@@ -862,4 +862,21 @@ textarea {
     display: flex;
     justify-self: flex-start;
   }
+
+  button:hover {
+    background-color: #00f;
+    transition: background-color 2s;
+  }
+
+  .nav-items li:hover {
+    color: black;
+    font-size: 20px;
+    transition: background-color 2s, font-size 2s;
+  }
+
+  .name:hover {
+    font-size: 20px;
+    color: black;
+    transition: font-size 2s, color 2s;
+  }
 }
