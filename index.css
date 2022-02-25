@@ -133,6 +133,10 @@ body {
   margin: 0;
 }
 
+.content-image-mobile {
+  width: 100%;
+}
+
 .project-title {
   margin-top: 24px;
   font-family: "Crete Round", Arial, Helvetica, sans-serif;
@@ -580,7 +584,7 @@ textarea {
   /* Work section */
 
   .second-section {
-    margin-left: 50px;
+    margin-left: 30px;
     margin-right: 30px;
   }
 
@@ -595,8 +599,8 @@ textarea {
   }
 
   .border-right {
-    display: block;
-    width: 794px;
+    display: flex;
+    flex: 1;
     height: 0;
     margin-top: 26px;
     border-bottom: 1px solid #212121;
@@ -609,17 +613,21 @@ textarea {
   .feature-wrapper {
     margin-bottom: 20px;
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1.5fr 1fr;
     justify-content: center;
   }
 
   .content-image-desktop {
     display: block;
-    margin-right: 20px;
+    width: 40vw;
+  }
+
+  .work-section {
+    margin-left: 20px;
   }
 
   .title.project-title {
-    width: auto;
+    margin-left: 0;
     margin-top: 0;
     margin-bottom: 24px;
   }
