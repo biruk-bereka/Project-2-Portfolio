@@ -867,4 +867,10 @@ textarea {
     background-color: #00f;
     transition: background-color 2s;
   }
+  
+  .nav-items li:hover{
+    background-color: crimson;
+    font-size: 20px;
+    transition: background-color 2s, font-size 2s;
+  }
 }
