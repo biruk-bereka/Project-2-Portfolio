@@ -862,4 +862,9 @@ textarea {
     display: flex;
     justify-self: flex-start;
   }
+
+  button:hover {
+    background-color: #00f;
+    transition: background-color 2s;
+  }
 }
