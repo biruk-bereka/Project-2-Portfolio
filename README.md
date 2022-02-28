@@ -10,6 +10,9 @@
 - HTML and CSS
 - Technology Used: Github for version control
 
+## Live Demo 
+
+[Live Demo Link](https://biruk-bereka.github.io/Project-2-Portfolio/)
 
 👤 **Author1**
 
