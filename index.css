@@ -11,27 +11,52 @@ a {
   text-decoration: none;
   color: inherit;
 }
+
 body {
   padding: 0;
   margin: 0;
 }
-/*javaScript style*/
+
+/* javaScript style */
 .list-item {
-  font-family: "Inter", Arial, Helvetica, sans-serif; 
-  font-style: normal; 
+  font-family: "Inter", Arial, Helvetica, sans-serif;
+  font-style: normal;
   font-weight: bold;
-   height: 100vh;
-    width: 100%; 
-    font-size: 32px; 
-    line-height: 44px;
-     display: flex;
-      flex-direction: column; 
-      color: #FFF5E1; 
-    } 
+  height: 100vh;
+  width: 100%;
+  font-size: 32px;
+  line-height: 44px;
+  display: flex;
+  flex-direction: column;
+  color: #fff5e1;
+}
+
+#cancel {
+  align-self: flex-end;
+  margin-right: 70px;
+}
 
 .menu-items {
   color: white;
 }
+
+.cancelIcon {
+  align-self: flex-end;
+}
+
+.menu-item {
+  padding-bottom: 10px;
+  max-width: 412px;
+}
+
+.separtor {
+  width: 412px;
+  margin-bottom: 20px;
+  border: 1px solid #6f6c6b;
+}
+
+/* End of javascript style */
+
 /* Toolbar section  */
 
 .header {
@@ -186,6 +211,21 @@ body {
   border: 1px solid #8993a4;
   color: #091e42;
 }
+
+/* Javascript style */
+ul > li:nth-child(3) {
+  margin-left: -30px;
+}
+
+ul > li:nth-child(5) {
+  margin-left: -30px;
+}
+
+ul > li:nth-child(7) {
+  margin-left: -30px;
+}
+
+/* Javascript style */
 
 .button {
   font-family: "Inter", Arial, Helvetica, sans-serif;
@@ -524,8 +564,17 @@ textarea {
     padding: 0;
   }
 
-  /* Nav-bar */
+  #cancel {
+    display: none;
+  }
 
+  .menu-item {
+    margin-bottom: 0;
+    border: none;
+  }
+
+  /* Nav-bar */
+  .separtor,
   .menu-icon {
     display: none;
   }
