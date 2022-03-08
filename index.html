@@ -9,15 +9,16 @@
 </head>
 <body>
     <header class="header">
-        <a href="index.html"><h1 class="name">Biruk Bereka</h1></a>
+        <a href="index.html" id="logo"><h1 class="name">Biruk Bereka</h1></a>
         <nav class="nav-bar">
-            <div class="menu-icon"><img src="./Icons/Icon-Menu.png" alt=""></div>
-            <div class="nav-items">
-              <ul>
+            <div class="menu-icon" id="menu"><img src="./Icons/Icon-Menu.png" alt=""></div>
+            <div class="nav-items" id="menu-list">
+              <ul id="list-items">
+                <li><img src="Icons/Icon-Cancel.png" alt=""></li>
                 <li><a href="#portfolio">Portfolio</a></li>
                 <li><a href="#about">About</a></li>
                 <li><a href="#contact">Contact</a></li>
-                <li><a class="mail" href="#mail"><img src="./Icons/Union.png" alt=""></a></li>
+                <li id="mail-icon"><a class="mail" href="#mail"><img src="./Icons/Union.png" alt=""></a></li>
               </ul>
             </div>
         </nav>
@@ -283,5 +284,6 @@
     
       
     </main>
+    <script src="index.js"></script>
 </body>
 </html>

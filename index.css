@@ -17,6 +17,9 @@ body {
   margin: 0;
 }
 
+.menu-items {
+  color: white;
+}
 /* Toolbar section  */
 
 .header {
