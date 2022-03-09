@@ -35,19 +35,37 @@ for(let i=0; i<seeProjectButton.length; i++){
 
 
 function displayProjectCard(i){
-  // const card = document.getElementById(`project-${i}`);
-  const projectTitle = projectCard[i].children[0];
-  console.log(projectTitle);
-
+  let projectTitle = projectCard[i].children[0];
+  const projectTechnologies = projectCard[1].children[3];
+  
+  if(i===0) {
+    projectTitle = document.querySelector('#project-title-1');
+  }
+   
   const project = [{
     closePopup: './images/popup-cancel.png',
-    projectTitle: `${projectTitle.innerHTML}`,
+    title: `${projectTitle.innerHTML}`,
+    technologies: `${projectTechnologies.innerHTML}`,
+    popupImage: './images/popup-image.png',
+    description:  `<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+                      Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
+                      when an unknown printer took a galley of type and scrambled it to make a 
+                      type specimen book. It has survived not only five centuries, but also the leap 
+                      into electronic typesetting, remaining essent</p>`,
+
   }];
   
   const htmlMarkup = `
-  <img class="close-icon" src=${project[0].closePopup}>
-  <br>
-  ${project[0].projectTitle}
+     <div class="popup-header"> 
+      <div class="title-style">${project[0].title}</div> 
+      <img class="close-icon" src=${project[0].closePopup}>
+     </div>
+    <br>
+    <div class="tech technologies">${project[0].technologies}</div> 
+    <br>
+    <img class="popup-image" src= ${project[0].popupImage}>
+    <br>
+    ${project[0].description}
   `;
  
   const section = document.createElement('section');
