@@ -13,6 +13,9 @@ a {
 } */
 
 /* Popup window */
+.default {
+  display: none;
+}
 
 .popup {
   display: flex;

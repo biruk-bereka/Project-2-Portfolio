@@ -37,7 +37,8 @@ for(let i=0; i<seeProjectButton.length; i++){
 function displayProjectCard(i){
   // const card = document.getElementById(`project-${i}`);
   const projectTitle = projectCard[i].children[0];
-  
+  console.log(projectTitle);
+
   const project = [{
     closePopup: './images/popup-cancel.png',
     projectTitle: `${projectTitle.innerHTML}`,
@@ -58,6 +59,7 @@ function displayProjectCard(i){
 
   function display() {
     section.classList.toggle('popup');
+    window.location.reload();
   };
   
   closeIcon.addEventListener('click', display) 
