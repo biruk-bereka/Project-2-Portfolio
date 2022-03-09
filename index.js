@@ -21,3 +21,49 @@ menuItem.addEventListener('click', () => {
   document.getElementById('logo').style.display = 'flex';
   window.location.reload();
 });
+
+// Popup window 
+
+const seeProjectButton = document.querySelectorAll('.button');
+const projectCard = document.querySelectorAll('.project-card');
+
+for(let i=0; i<seeProjectButton.length; i++){
+    seeProjectButton[i].addEventListener('click', () => {
+    displayProjectCard(i); 
+});
+}
+
+
+function displayProjectCard(i){
+  // const card = document.getElementById(`project-${i}`);
+  const projectTitle = projectCard[i].children[0];
+  
+  const project = [{
+    closePopup: './images/popup-cancel.png',
+    projectTitle: `${projectTitle.innerHTML}`,
+  }];
+  
+  const htmlMarkup = `
+  <img class="close-icon" src=${project[0].closePopup}>
+  <br>
+  ${project[0].projectTitle}
+  `;
+ 
+  const section = document.createElement('section');
+  section.className = 'default';
+  document.body.appendChild(section);
+  section.innerHTML = htmlMarkup;
+
+  const closeIcon = document.querySelector('.close-icon');
+
+  function display() {
+    section.classList.toggle('popup');
+  };
+  
+  closeIcon.addEventListener('click', display) 
+    section.classList.toggle('popup');
+  
+  
+}
+
+
