@@ -106,6 +106,7 @@ for (let i = 0; i < seeProjectButton.length; i += 1) {
 if (windowSize.matches) {
   for (let i = 0; i < projectCard.length; i += 1) {
     projectCard[i].addEventListener('click', () => {
+      if(i==0) displayProjectCard(0);
       if (i === 6) { displayProjectCard(i - 1); } else { displayProjectCard(i); }
     });
   }
