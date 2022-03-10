@@ -26,6 +26,7 @@ menuItem.addEventListener('click', () => {
 
 const seeProjectButton = document.querySelectorAll('.button');
 const projectCard = document.querySelectorAll('.project-card');
+const windowSize = window.matchMedia("(min-width: 992px)"); 
 
 for(let i=0; i<seeProjectButton.length; i++){
     seeProjectButton[i].addEventListener('click', () => {
@@ -34,10 +35,11 @@ for(let i=0; i<seeProjectButton.length; i++){
 }
 
 
+
 function displayProjectCard(i){
   let projectTitle = projectCard[i].children[0];
   const projectTechnologies = projectCard[1].children[3];
-  
+
   if(i===0) {
     projectTitle = document.querySelector('#project-title-1');
   }
@@ -55,12 +57,16 @@ function displayProjectCard(i){
 
   }];
   
+    
+  if(windowSize.matches) {
+     project[0].popupImage = './images/desktop-popup-image.png' 
+  }
+
   const htmlMarkup = `
      <div class="popup-header"> 
       <div class="title-style">${project[0].title}</div> 
       <img class="close-icon" src=${project[0].closePopup}>
      </div>
-
     <div id="projectTech" class="technologies">${project[0].technologies}</div> 
     
     <img class="popup-image" src= ${project[0].popupImage}>
