@@ -99,11 +99,10 @@ function displayProjectCard(i) {
 
 for (let i = 0; i < seeProjectButton.length; i += 1) {
   seeProjectButton[i].addEventListener('click', () => {
-    const scrollStop = document.querySelector('body');
-    scrollStop.style.overflow = 'hidden';
     if (i === 6) { displayProjectCard(i - 1); } else { displayProjectCard(i); }
   });
 }
+
 if (windowSize.matches) {
   for (let i = 0; i < projectCard.length; i += 1) {
     projectCard[i].addEventListener('click', () => {
