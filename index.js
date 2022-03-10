@@ -36,7 +36,7 @@ function displayProjectCard(i) {
   }
 
   const project = [{
-    closePopup: './images/popup-cancel.png',
+    closePopup: './Icons/Enabled.png',
     title: `${projectTitle.innerHTML}`,
     technologies: `${projectTechnologies.innerHTML}`,
     popupImage: './images/popup-image.png',
@@ -49,6 +49,7 @@ function displayProjectCard(i) {
   }];
 
   if (windowSize.matches) {
+    project[0].closePopup = './Icons/Disabled.png';
     project[0].popupImage = './images/desktop-popup-image.png';
     project[0].title = '<h1>Keeping track of hundreds of components website</h1>';
   }
@@ -59,15 +60,17 @@ function displayProjectCard(i) {
       <img class="close-icon" src=${project[0].closePopup}>
      </div>
     <div id="projectTech" class="technologies">${project[0].technologies}</div> 
-    
+    <div class="popup-discription"> 
     <img class="popup-image" src= ${project[0].popupImage}>
-    
+    <div class="popup-information">
     <div id="projectDiscription">${project[0].description}</div>
-    
     <div id="infoButton">
     <button class="button popupButton"> See Live<img class="icon-info" src="./Icons/Icon-Export.png"></button>
     <button class="button popupButton"> See Live<img class="icon-info" src="./Icons/Group.png"></button>
+    </div>
     <div>
+    </div>
+    
   `;
 
   const section = document.createElement('section');
@@ -88,6 +91,6 @@ function displayProjectCard(i) {
 
 for (let i = 0; i < seeProjectButton.length; i += 1) {
   seeProjectButton[i].addEventListener('click', () => {
-    displayProjectCard(i);
+    if (i === 6) { displayProjectCard(i - 1); } else { displayProjectCard(i); }
   });
 }

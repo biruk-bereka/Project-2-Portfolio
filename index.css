@@ -31,6 +31,8 @@ a {
   font-size: 24px;
   line-height: 44px;
   color: #172b4d;
+  width: 200px;
+  margin-left: 18px;
 }
 
 #projectDiscription {
@@ -45,7 +47,7 @@ a {
 }
 
 #infoButton {
-  margin-left: -15px;
+  margin-left: 0;
   margin-bottom: 20px;
 }
 
@@ -658,6 +660,7 @@ textarea {
   }
 
   /* popup window */
+
   .popup {
     width: 1057px;
     height: 631px;
@@ -666,20 +669,62 @@ textarea {
     right: 0;
     top: 0;
     bottom: 0;
+    align-items: flex-start;
     margin-left: 111px;
     background: #fff;
     border: 1px solid #ebecf0;
     box-shadow: 0 48px 48px rgba(37, 47, 137, 0.08);
   }
 
+  .popup-header {
+    margin-bottom: 10px;
+  }
+
   .title-style {
     font-family: "Crete Round", Arial, Helvetica, sans-serif;
     font-style: normal;
     font-weight: 400;
-    font-size: 15px;
+    font-size: 20px;
+    width: 912px;
     line-height: 44px;
-    width: 600px;
     color: #172b4d;
+    margin-left: 0;
+  }
+
+  #projectTech {
+    margin-left: 0;
+    margin-bottom: 30px;
+    font-family: "Poppins", Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 20px;
+    color: #3c3a39;
+  }
+
+  .popup-discription {
+    display: flex;
+  }
+
+  .popup-image {
+    margin-right: 20px;
+    align-self: flex-end;
+  }
+
+  .popup-information {
+    display: flex;
+    flex-direction: column;
+  }
+
+  #infoButton {
+    margin-left: 0;
+    margin-bottom: 0;
+    margin-top: auto;
+    justify-self: flex-end;
+  }
+
+  #projectDiscription {
+    margin-top: -2px;
   }
 
   /* popup window */
