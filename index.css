@@ -671,7 +671,15 @@ background: #FFFFFF;
 border: 1px solid #EBECF0;
 box-shadow: 0px 48px 48px rgba(37, 47, 137, 0.08);
   }
-
+.title-style {
+  font-family: 'Crete Round'; 
+  font-style: normal; 
+  font-weight: 400; 
+  font-size: 15px; 
+  line-height: 44px;
+  width: 600px;
+  color: #172B4D; 
+  } 
   /* popup window */
   
   #cancel {
