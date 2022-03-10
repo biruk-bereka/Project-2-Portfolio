@@ -60,12 +60,17 @@ function displayProjectCard(i){
       <div class="title-style">${project[0].title}</div> 
       <img class="close-icon" src=${project[0].closePopup}>
      </div>
-    <br>
-    <div class="tech technologies">${project[0].technologies}</div> 
-    <br>
+
+    <div id="projectTech" class="technologies">${project[0].technologies}</div> 
+    
     <img class="popup-image" src= ${project[0].popupImage}>
-    <br>
-    ${project[0].description}
+    
+    <div id="projectDiscription">${project[0].description}</div>
+    
+    <div id="infoButton">
+    <button class="button popupButton"> See Live<img class="icon-info" src="./Icons/Icon-Export.png"></button>
+    <button class="button popupButton"> See Live<img class="icon-info" src="./Icons/Group.png"></button>
+    <div>
   `;
  
   const section = document.createElement('section');
