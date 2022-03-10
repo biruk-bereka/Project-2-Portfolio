@@ -59,7 +59,8 @@ function displayProjectCard(i){
   
     
   if(windowSize.matches) {
-     project[0].popupImage = './images/desktop-popup-image.png' 
+     project[0].popupImage = './images/desktop-popup-image.png';
+    project[0].title = '<h1>Keeping track of hundreds of components website</h1>'; 
   }
 
   const htmlMarkup = `
