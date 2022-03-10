@@ -61,7 +61,7 @@ a {
   flex-direction: column;
   align-items: center;
   padding: 16px;
-  position:absolute;
+  position:fixed;
   overflow: scroll;
   width: 343px;
   height: 770px;
