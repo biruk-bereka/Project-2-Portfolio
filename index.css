@@ -663,11 +663,11 @@ textarea {
 
   .popup {
     width: 1057px;
-    height: 631px;
+    height: 513px;;
     position: fixed;
     left: 0;
     right: 0;
-    top: 0;
+    top: 53px;
     bottom: 0;
     align-items: flex-start;
     margin-left: 111px;
