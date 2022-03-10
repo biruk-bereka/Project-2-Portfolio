@@ -26,8 +26,8 @@ menuItem.addEventListener('click', () => {
 const seeProjectButton = document.querySelectorAll('.button');
 const projectCard = document.querySelectorAll('.project-card');
 const section = document.createElement('section');
-  section.className = 'default';
-  document.body.appendChild(section);
+section.className = 'default';
+document.body.appendChild(section);
 const windowSize = window.matchMedia('(min-width: 992px)');
 
 function displayProjectCard(i) {
@@ -69,7 +69,7 @@ function displayProjectCard(i) {
                                   <a href="https://github.com/biruk-bereka/Project-2-Portfolio" target="_blank"><button class="button popupButton"> See Source<img class="icon-info" src="./Icons/Group.png"></button></a>
                               </div>
                           <div>
-                      </div>`
+                      </div>`,
   }];
 
   if (windowSize.matches) {
@@ -84,7 +84,6 @@ function displayProjectCard(i) {
      ${project[0].popupDiscription}  
   `;
 
-  
   section.innerHTML = htmlMarkup;
 
   const closeIcon = document.querySelector('.close-icon');
@@ -99,10 +98,16 @@ function displayProjectCard(i) {
 }
 
 for (let i = 0; i < seeProjectButton.length; i += 1) {
-
   seeProjectButton[i].addEventListener('click', () => {
     const scrollStop = document.querySelector('body');
     scrollStop.style.overflow = 'hidden';
     if (i === 6) { displayProjectCard(i - 1); } else { displayProjectCard(i); }
   });
+}
+if (windowSize.matches) {
+  for (let i = 0; i < projectCard.length; i += 1) {
+    projectCard[i].addEventListener('click', () => {
+      if (i === 6) { displayProjectCard(i - 1); } else { displayProjectCard(i); }
+    });
+  }
 }
