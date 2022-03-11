@@ -21,36 +21,32 @@ menuItem.addEventListener('click', () => {
   window.location.reload();
 });
 
-
 // Popup window
 
-  const projectSection = document.querySelector(".second-section");
-  const projectCardsContainer = document.createElement('div');
-  
-  projectCardsContainer.classList.add('project-cards-container');
-  projectSection.append(projectCardsContainer);
-  
-  function displayProjectCards(i) {
-       
-    const projectCards= [
-      {
-         name: "Profesional Art Printing Data",
-         discription: "A daily selection of privately personalized reads; no account or sign-ups required. has been the industry's standard ",
-         technologies: ["html", "Bootstrap", "Ruby on rails"], 
-         buttonName: "See Project",
-         liveVersionLink: "https://biruk-bereka.github.io/Project-2-Portfolio/",
-         sourceLink: "https://github.com/biruk-bereka/Project-2-Portfolio"        
-      }
-    ]
-    
- 
-    const card = document.createElement('div');
-    const h2 = document.createElement('h2');
-    projectCardsContainer.append(card);
-    card.append(h2);
+const projectSection = document.querySelector('.second-section');
+const projectCardsContainer = document.createElement('div');
 
-    
-  }
-   
-  displayProjectCards(0);
+projectCardsContainer.classList.add('project-cards-container');
+projectSection.append(projectCardsContainer);
+
+function displayProjectCards() {
+  const projectCards = [
+    {
+      name: 'Profesional Art Printing Data',
+      discription: "A daily selection of privately personalized reads; no account or sign-ups required. has been the industry's standard ",
+      technologies: ['html', 'Bootstrap', 'Ruby on rails'],
+      buttonName: 'See Project',
+      liveVersionLink: 'https://biruk-bereka.github.io/Project-2-Portfolio/',
+      sourceLink: 'https://github.com/biruk-bereka/Project-2-Portfolio',
+    },
+  ];
+  console.log(projectCards);
+
+  const card = document.createElement('div');
+  const h2 = document.createElement('h2');
+  projectCardsContainer.append(card);
+  card.append(h2);
+}
+
+displayProjectCards();
 // Popup window end
