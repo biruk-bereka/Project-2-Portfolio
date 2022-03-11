@@ -43,11 +43,14 @@ menuItem.addEventListener('click', () => {
       }
     ]
     
+ 
     const card = document.createElement('div');
     const h2 = document.createElement('h2');
     projectCardsContainer.append(card);
     card.append(h2);
 
+    
   }
-
+   
+  displayProjectCards(0);
 // Popup window end
