@@ -1,7 +1,7 @@
 const menuIcon = document.querySelector('#menu');
 const menuItem = document.querySelector('#list-items');
 
-menuIcon.addEventListener('click', () => {
+menuIcon.addEventListener('click, () => {
   const menuList = document.getElementById('list-items');
   const listItems = document.getElementsByClassName('menu-item');
 
@@ -15,7 +15,7 @@ menuIcon.addEventListener('click', () => {
   listItems.classList.add('menu-item-style');
 });
 
-menuItem.addEventListener('click', () => {
+menuItem.addEventListene('click', () => {
   menuItem.style.display = 'none';
   document.getElementById('menu').style.display = 'flex';
   document.getElementById('logo').style.display = 'flex';
