@@ -19,7 +19,6 @@ a {
 
 .popup-header {
   display: flex;
-  justify-items: baseline;
   margin-top: 16px;
   margin-bottom: 40px;
 }
