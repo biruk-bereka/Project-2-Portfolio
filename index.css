@@ -667,11 +667,11 @@ textarea {
   /* popup window */
 
   .popup {
-    width: 1057px;
+    width: 600px;
     height: 513px;
     position: fixed;
-    left: 0;
-    right: 0;
+    left: 20px;
+    right: 0; 
     top: 53px;
     bottom: 0;
     align-items: flex-start;

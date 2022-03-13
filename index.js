@@ -26,14 +26,24 @@ menuItem.addEventListener('click', () => {
 const projectSection = document.querySelector('.second-section');
 const projectCardsContainer = document.createElement('div');
 
-const sectionPopup = document.createElement('section');
-sectionPopup.className = 'default';
-document.body.appendChild(sectionPopup);
 
 projectCardsContainer.classList.add('project-cards-container');
 projectSection.append(projectCardsContainer);
 
 const projectCards = [
+  {
+    closePopup: './Icons/Enabled.png',
+    name: 'Multi Post Stories',
+    discription: "A daily selection of privately personalized reads; no account or sign-ups required. has been the industry's standard ",
+    technologies: ['css','html', 'Bootstrap', 'Ruby on rails'],
+    image: './images/background-image.png',
+    buttonName: ['See Project', 'See Live', 'See Source'],
+    liveVersionLink: 'https://biruk-bereka.github.io/Project-2-Portfolio/',
+    sourceLink: 'https://github.com/biruk-bereka/Project-2-Portfolio',
+    target: '_blank',
+    icon: ['./Icons/Icon-Export.png', './Icons/Group.png'],
+  },
+
   {
     closePopup: './Icons/Enabled.png',
     name: 'Profesional Art Printing Data 1',
@@ -145,84 +155,14 @@ for (let i = 0; i < projectCards.length; i += 1) {
 }
 // end of creating card
 
-// creating popup
-// let popupHeader = document.createElement('div');
-// popupHeader.className = 'popup-header';
-
-// let popupTitle = document.createElement('div');
-// popupTitle.className = 'title-style';
-// popupTitle.append(projectCards[0].name);
-
-// let popupClose = document.createElement('img');
-// popupClose.className = 'close-icon';
-// popupClose.src = projectCards[0].closePopup;
-
-// popupHeader.append(popupTitle, popupClose);
-
-// let popupTechnologies = document.createElement('ul');
-// popupTechnologies.className = 'technologies';
-// popupTechnologies.setAttribute('id','projectTech');
-
-// for (let j = 0; j < projectCards[0].technologies.length; j += 1) {
-//   const technologyList = document.createElement('li');
-//   technologyList.append(projectCards[0].technologies[j]);
-//   popupTechnologies.append(technologyList);
-// }
-
-// let popupDiscription = document.createElement('div');
-// popupDiscription.className = 'popup-image';
-
-// let popupImage = document.createElement('img');
-// popupImage.className = 'popup-image';
-// popupImage.src = projectCards[0].image;
-
-// let popupInformation = document.createElement('div');
-// popupInformation.className = 'popup-information';
-
-// let projectDiscription = document.createElement('div');
-// projectDiscription.setAttribute('id','projectDiscription');
-
-// let projectContent = document.createElement('p');
-// projectContent = projectCards[0].discription;
-
-// projectDiscription.append(projectContent);
-
-// let buttonInformation = document.createElement('div');
-// buttonInformation.setAttribute('id', 'infoButton');
-
-// let liveLink = document.createElement('a');
-// liveLink.href = projectCards[0].seeLiveLink;
-// liveLink.target = projectCards[0].target;
-// let buttonLive = document.createElement('button');
-// buttonLive.classList.add("button", "popupButton");
-// buttonLive.textContent = projectCards[0].buttonName[1];
-// let liveIcon = document.createElement('img');
-// liveIcon.src = projectCards[0].icon[0];
-// liveIcon.className = 'icon-info';
-// buttonLive.append(liveIcon);
-// liveLink.append(buttonLive);
-
-// let sourceLink = document.createElement('a');
-// sourceLink.href = projectCards[0].sourceLink;
-// sourceLink.target = projectCards[0].target;
-// let buttonSource = document.createElement('button');
-// buttonSource.classList.add("button", "popupButton");
-// buttonSource.textContent = projectCards[0].buttonName[2];
-// let sourceIcon = document.createElement('img');
-// sourceIcon.src = projectCards[0].icon[1];
-// sourceIcon.className = 'icon-info';
-// buttonSource.append(sourceIcon);
-// sourceLink.append(buttonSource);
-
-// buttonInformation.append(liveLink,sourceLink );
-// popupInformation.append(projectDiscription, buttonInformation);
-// popupDiscription.append(popupImage, popupInformation);
-// sectionPopup.append(popupHeader, popupTechnologies, popupDiscription);
-
 const seeProjectButton = document.querySelectorAll('.button');
 
-
 function displayPopup(m) {
+  
+  const sectionPopup = document.createElement('section');
+  sectionPopup.className = 'default';
+  document.body.appendChild(sectionPopup);
+
   const popupHeader = document.createElement('div');
   popupHeader.className = 'popup-header';
   const popupTitle = document.createElement('div');
